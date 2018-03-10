@@ -11,13 +11,15 @@
     
     <body>
         <header>
-            <nav class="red lighten-2">
+            <nav>
                 <div class="nav-wrapper">
-                    <a href='#' onclick="home()">
-                        <img class="brandLogoHeader"
-                        src="https://lh4.googleusercontent.com/7zK5YgNNVMFre0QRuIdhBBqJx2KZoZ8uHIvCwrNkLOo47ivI0IEFhFAopsIUcf3dlDT_s-xSXsxaWVA=w1366-h678-rw"
-                        alt="./img/cafeliLogoWhite.png">
-                    </a>
+                    <a href="#" class="brand-logo" onclick="home('3D Cake')">Cafeli</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#" onclick="category('3D Cake')">3D Cake</a></li>
+                        <li><a href="#" onclick="category('Butter Cream Cake')">Butter Cream Cake</a></li>
+                        <li><a href="#" onclick="category('Korean Flower Cake')">Korean Flower Cake</a></li>
+                        <li><a href="https://www.instagram.com/cafelicakeart/">About Us</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
@@ -37,6 +39,7 @@
         </footer>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="script/materialize.min.js"></script>
+        <script src="script/data.js"></script>
         <script src="script/script.js"></script>
         <script>
             categoryGenerator()
