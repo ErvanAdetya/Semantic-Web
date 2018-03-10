@@ -44,3 +44,22 @@ img {
     font-size: 35px;
     font-weight: bold;
 }
+
+.detail {
+    height:84.4vh;
+}
+
+.image img {
+    vertical-align: middle;
+}
+
+.image p {
+    text-align: center;
+    color: #ffebee;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.helper {
+    vertical-align: middle;
+}
