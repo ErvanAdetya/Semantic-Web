@@ -47,7 +47,7 @@ function detailGenerator() {
     let template = `
         <img class="itemImg"
             src="${localStorage.getItem('itemPhoto')}"
-            alt="https://lh6.googleusercontent.com/XNbKPWjdNzNgeg_bCpSoakFc20s9WW3R9s_NFiUiAnQFASj6a0yTKlwVcEKt5UIy3NbILke9JCfp2aY=w1366-h629-rw">
+            alt="https://lh3.googleusercontent.com/Jt5psU2IeohSDPw1MMZRuzAydz1vhPV8WljasuSdIca9AoxUMlmlq3JgD38YYvigRc1XW_lpC0k6XUg=w1366-h678-rw">
         <p>${localStorage.getItem('itemName')}</p>
         `
     $('.image').append(template);
@@ -57,8 +57,10 @@ function detailGenerator() {
         <p>Category: ${localStorage.getItem('category')}</p>
         <p>Description: ${lorem}</p>
     `
-    $('.desc').append(description)
+    $('.desc').append(description);
 }
+
+console.log(data)
 
 const item = {
     name: 'Cake',
@@ -68,7 +70,7 @@ const item = {
 const cake3D = {
     title: '3D Cake',
     description: '3D Cakes are afun way to indulge your guests;it’s not just a beautiful centerpiece to your event but also a fun experience.',
-    item: [item,item,item,item,item,item,item]
+    item: data[0]
 }
 
 const butterCream = {
@@ -86,6 +88,8 @@ const korean = {
 $(document).ready(function(){
     $('.parallax').parallax();
 });
+
+$(".dropdown-content>li>a").css("color", '#e57373');
 
 let lorem = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget lobortis ligula. Aliquam luctus sem et neque vulputate, sed elementum nibh faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Suspendisse tempus semper felis, sed porta erat tristique ut. Phasellus lectus sem, consectetur euismod lacus id, malesuada vestibulum massa. Nunc sagittis viverra mauris, nec sagittis nibh aliquet quis. Ut leo erat, posuere nec ligula non, commodo convallis lorem. Proin ornare at turpis eget semper.
 
